@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Practicing web design using W3schools online HTML editor.">
+  <meta name="keywords" content="HTML, CSS, wed design, tutorial, online editor">
+  <meta name="author" content="Alex Rios">
+  <meta name="viewport" content="width-=device-width, initial-scale=1.0">
+
+<title>Mock Webpage 1</title>
+<style>
+body {
+  background-color: #66a3ff;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p.para-main {
+  text-align: justify;
+}
+
+.links{
+  color: #ffff1a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.title-header{
+  margin-bottom: -10px;
+}
+
+.img{
+  margin: 20px;
+}
+
+.form-main{
+  margin: 25px;
+  padding: 15px;
+}
+
+.fieldset{
+  border: 2px solid white;
+  border-radius: 25px;
+    
+}
+.title{
+  margin: 15px;
+  padding: 5px;
+}
+
+.interest-title{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  text-align: justify;
+}
+
+.other-interest-row{
+  margin-left: 10px;
+}
+.btn-form{
+  color: white;
+  background-color: #0066ff;
+  border: none;
+  font-size: 1.1em;
+  width: 130px;
+  height: 50px;
+}
+
+.btn-form:hover{
+  background-color: #0066ff;
+  opacity: 0.6;
+}
+
+.last-paragraph{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.notice-paragraph{
+  color: #ffff1a;
+  font-size: .7em;
+  font-style: italic;
+}
+
+.footer{
+  color: white;
+  text-align: center;
+}
+</style>
+</head>
+
+<main>
+
+<h1 class="main-title">Mock Up HTML page</h1>
+<h2 class="title-header">Some Quick Information First</h2>
+<div>
+	<p class="para-main">This is a paragraph inside of a div container. The information inside this container is just to show how a div can be styled in the html editor. Normally, styles are applied on an external CSS file, but the editor on <a class="links" href="www.W3schools.com" target="_blank">W3Schools</a> is not capable of applying external CSS. So, most of the CSS will be applied in the style section of the document to apply to just this specific page.</p>
+</div>
+
+<h2 class="title-header">Creating your Avatar</h2>
+
+<div>
+<p>First, we will create your avatar and give it a name.</p>
+</div>
+
+<div>
+	<img class="img" src="avatar.png" alt="Avatar" title="Name your Avatar" style="width:200px"><br>
+    <input type="text" name="fullname" placeholder="Name your avatar">
+    <input type="text" title="date of birth" placeholder="DOB - mm/dd/yyyy">
+    <input type="submit">
+</div>
+
+<h2 class="title-header">Next, Let's Get General Information About You</h2>
+<div class="form-main">
+  <form action="">
+    <fieldset class="fieldset">
+  	  <legend>About You</legend>
+      	<div class="title gender-title">Gender
+         <input class="gender-row" type="radio" name="gender" value="prefer not to say" checked>Prefer not to say
+         <input class="gender-row" type="radio" name="gender" value="male">Male
+         <input class="gender-row" type="radio" name="gender" value="female">Female
+        </div>
+        
+        <div class="title interest-title">Interests (check all that apply)
+         <input class="interest-row" type="checkbox" name="interests" value="boring" checked>Nothing, I'm boring
+         <input class="interest-row" type="checkbox" name="interests" value="homebody">Homebody
+         <input class="interest-row" type="checkbox" name="interests" value="outdoorsy">Outdoorsy
+         <input class="interest-row" type="checkbox" name="interests" value="cinema">Cinema/Film
+         <input class="interest-row" type="checkbox" name="interests" value="sports">Sporting Activities
+         <input class="other-interest-row" type="text" name="interests" size="30" placeholder="Other activity">
+       </div>
+        
+        <div class="title browser-title">Which browser are you using?
+         <input list="browsers" name="browser" placeholder="Pick One">
+          <datalist id="browsers" value="Pick one" required>
+           <option value="Chrome">
+           <option value="Safari">
+           <option value="Opera">
+           <option value="Edge">
+           <option value="Internet Explorer">
+           <option value="My browser isn't listed">
+        </datalist>
+        </div>
+        <input class="btn-form" type="submit">
+    </fieldset>  
+  </form>	
+</div>
+
+<div class="last-paragraph">
+  Thank you, we will now resume your front end web page development skills!<br>
+  <p class="notice-paragraph">Note, no action has been defined for the above form, so clicking the 'submit' button will not do anything.</p>
+</div>
+
+<footer class="footer">
+<div>Contact me via: <a href="https://www.linkedin.com/in/arios2/">LinkedIn</a> or <a href="mailto:arios134@hotmail.com">Email</a>
+</div>
+</footer>
+</main>
+</html>

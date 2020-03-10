@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!--Title of company-->
+<title>Forever Photobooths</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Alex Rios">
+<meta name="keywords" content="photo, photobooth, professional, tristate, camera, wedding vendor">
+<meta name="description" content="Professional Photobooth service">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "serif", Georgia, 'Times New Roman', Times;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 4px;
+}
+</style>
+<script>
+  /* ATTEMPT TO WRITE OWN JS TO SUBMIT FORM TO EMAIL function submitContact('submit', e) {
+    e.preventDefault();
+    document.getElementById('submitForm').innerHTML = 'Thank you, we will contact you about your event soon!';
+    document.getElementById('eventDetails').reset();
+  }*/
+  /* LOADS FB EXTENSIONS, SUCH AS LIKE AND SHARE BUTTONS MUST USE WITH OTHER METHODS
+   window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'your-app-id for fb page',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v6.0'
+    }); */
+
+    /* !function(f,b,e,v,n,t,s)
+    TOOK FROM FOREVERPHOTOOTH PAGE{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '437372676741080');
+    fbq('track', 'PageView'); */
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+</head>
+
+<main>
+<!--Navbar that sits on top-->
+<div class="w3-top">
+ <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+	<!--add homepage url here--> <a href="https://foreverphotobooths.us" class="w3bar-item w3-button">COMPANY NAME</a>
+	<!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#equipment" class="w3-bar-item w3-button">Booth Types</a>
+      <a href="#events" class="w3-bar-item w3-button">Events</a>
+      <a href="#contact" class="w3-bar-item w3-button">Book with Us</a>
+    </div>
+  </div>
+</div>
+<!--Header-->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px; min-width:500px;" id="home">
+<!--adds an image to be displayed in the header, change if needed-->
+<img class="w3-image" src="" alt="Past event photo" width="800px">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Forever Photobooths</h1> <!--adds company name into image, change-->
+  </div>
+</header>
+
+<!--Page content-->
+<div class="w3-content" style="max-width:1350px">
+  <div class="w3-row w3-padding-64 w3-right" id="about">
+    <div class="w3-col m6 w3-padding-large w3-center">
+    <h1 class="w3-center">Forever Photobooths</h1><br>
+      <h5 class="w3-center">Capture The Moment</h5>
+        <p class="w3-large">Memories are one of a kind. Make sure to capture your special day now and
+          relive the experience for years to come
+        </p>
+    
+  </div>
+</div>
+  <hr>
+  <!--Equipment details-->
+  <div class="w3-row w3-padding-24" id="equipment">
+    <div class="w3-col m6 w3-padding w3-hide-small w3-center">
+      <img src="weddingStrip.jpg" class="w3-image w3-opacity-min" alt="Past event photo" width="400" height="550">
+  </div>
+  <div class="w3-col l6 w3-padding">
+      <h1 class="w3-center">Professional Equipment</h1><br>
+      <h4>Only the Best</h4>
+        <p class="w3-text-grey">
+          We use 18 mega pixel Canon Digital SLR cameras
+          and sublimation printers to produce crisp images onto a 2x6" photo strip.
+          Our photography grade lighting eliminates red eye and flashes from showing in photos.
+        </p>
+        <p class="w3-text-grey">
+          The touch screen interface puts you in control.<br />
+          Choose between color or B&amp;W, preview your pose and tap the screen to begin!
+          Various booth options are available. From enclosed to open-air and
+          even an inflatable LED booth, we have a booth that suites your event.
+        </p>
+    </div>
+  </div>    
+  <hr>
+  <!--menu of events we service-->
+  <div class="w3-row w3-padding-64" id="events">
+    <div class="w3-col l6 w3-padding">
+      <h1 class="w3-center">Events We Service</h1><br>
+        <!--list of events with a break between each-->
+        <h4>Weddings</h4>
+          <p class="w3-text-grey">
+          Our specialty!<br />We personalize your photo strip to match your theme,
+          provide props and take professional quality photos printed onto a photo strip. We even offer a photo album
+          with your guest's pictures and signatures!
+          </p><br/>
+          <h4>Bat/Bar Mitzvahs</h4>
+          <p class="w3-text-grey">Let us help celebrate your rite of passage! We will bring the props. You and your guests
+            bring the smiles and funny faces!
+          </p><br />
+        <h4>Office Parties</h4>
+          <p class="w3-text-grey">Bring out the fun at your next holiday party
+              or team event. You can even add your logo to the photo strip. 
+          </p><br />
+        <h4>Birthdays</h4>
+          <p class="w3-text-grey">Whether it be the right props or a customized setting
+              on the green screen, your next birthday party will be a blast! 
+          </p><br />
+        <h4>Class Reunions</h4>
+            <p class="w3-text-grey">No matter the age, guests love our photobooths.
+            </p><br />
+    </div>   
+    <div class="w3-col l6 w3-padding">
+      <img src="led-booth.jpg" class="w3-round w3-image" alt="Photobooth machine" style="width:100%">
+    </div>
+  </div>
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-24" id="contact">
+    <h1>Contact</h1><br>
+      <div class="w3-text-grey w3-center">We look forward to hearing from you.<br />
+        You can call/txt 484-302-0127 or<a href="mailto:info@foreverphotobooths.com" title="Email us" class="w3-hover-text-green"> Send an Email</a><br />
+      </div>
+      <div class="w3-text-grey"> Send us your event details below:
+      </div>
+    
+      <form action="/sendEmail.php" /*onsubmit ='submitContact()'*/ id="eventDetails" target="_self" method="POST">
+    <div>
+      <input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name">
+    </div>
+    <div>
+      <input class="w3-input w3-padding-16" type="email" placeholder="E-mail" required name="email">
+    </div>
+    <div>
+      <input class="w3-input w3-padding-16" type="tel" placeholder="Phone Number 555-555-5555" required name="telephone">
+    </div>
+    <div>
+      <input list="event type" class="w3-input w3-padding-16" placeholder="Event Type" required name="eventType">
+        <datalist id="event type" value="Pick one" required>
+          <option value="Wedding"></option>
+          <option value="Birthday"></option>
+          <option value="Office/Holiday Party"></option>
+          <option value="Class Reunion"></option>
+          <option value="Other"></option>
+        </datalist>
+    </div>
+    <div>
+      <input list="booth type" class="w3-input w3-padding-16" type="text" placeholder="Booth Type" required name="boothType">
+        <datalist id="booth type" value="Pick booth" required>
+          <option value="Enclosed"></option>
+          <option value="Open-air"></option>
+          <option value="Inflatable LED (+$100)"></option>
+        </datalist>
+    </div>
+    <div>
+      <input class="w3-input w3-padding-16" type="datetime-local" placeholder="Event Details" required name="eventDate" value="2020-01-01T19:00">
+    </div>
+    <div>
+      <input list="duration" class="w3-input w3-padding-16" placeholder="Event Duration" required name="eventDuration">
+        <datalist id="duration" value="Event duration" required>
+          <option value="Event Duration - 2 hours"></option>
+          <option value="Event Duration - 3 hours"></option>
+          <option value="Event Duration - 5 hours"></option>
+        </datalist>
+    </div>
+    <div>
+      <input class="w3-input w3-padding-16" type="text" placeholder="Title for graphics E.g., 'Sarah &amp; John, September 20 2020'" required name='graphics'>
+    </div>
+    <div>
+      <button id='submitForm' class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button>
+    </div>
+    </form>
+    <div class="w3-text-blue-grey w3-large"><strong>Forever Photobooth, West Chester, PA</strong>
+  </div>
+</div>
+  <!--End page content-->
+
+<!--Footer-->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Web content crafted by <a href="mailto:arios134@hotmail.com" title="Email Alex for design work" class="w3-hover-text-green">Alex Rios</a></p>
+</footer>
+</main>
+</html>
