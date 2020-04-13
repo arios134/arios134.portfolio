@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML: Tables</title>
+  <link href="technicalStyles.css" rel="stylesheet">
+</head>
+
+<!--the above metadata is for my own use, it will not be accepted into code.io environment-->
+<body>
+<nav id="navbar"> <!--code to always show navbar on the left side of screen when using desktop/laptop-->
+  <header>Structuring Basic Data in HTML</header>
+  <ul>
+    <li>
+      <a class="nav-link" href="#html_tables">HTML Tables</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#unordered_lists">Unordered Lists</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#ordered_lists">Ordered Lists</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#input_forms">Input Forms</a>
+    </li>
+    <li>
+      <a class="nav-link" href="#form_datasets">Form Datasets</a>
+    </li>
+  </ul>
+</nav>
+
+ <main id="main-doc">
+   <section id="html_tables" class="main-section">
+     <header>HTML Tables</header>
+      <p>Formatting a table requires that each row and column be defined,
+        in addition to defining what content will be displayed in each cell.
+      </p>
+      <p>Much like pictures, CSS properties can be used to style the table so that it can have borders,
+        different colors, padding and other properties.
+      </p>
+      <p>Tables are defined with the <code class="code-span">&lt;table&gt;</code> tag, each table row is defined with the <code class="code-span">&lt;tr&gt;</code> tag and each table header in that row is defined with the <code class="code-span">&lt;th&gt;</code> tag.
+        To add data into each cell, use the <code class="code-span">&lt;td&gt;</code> tag. Nesting is important to format the table.
+        The table below will have 10px padding between cell content and its borders,
+        a border added and collapse those borders into one. You can see what the table looks like without border collapse
+        by adding a comment.
+        <ul><strong>Key Points to Remember</strong>
+          <li>For style properties to apply to all tables in the page, specify properties in the head section</li>
+          <li><strong>Make sure to specify which tags will get the defined property</strong></li>
+          <li>Style changes applied within the table will override the default property in the header</li>
+        </ul>
+      </p>
+    <code class="code-section">
+      Note, extra spaces added in tags to show the HTML format with rendering below<br />
+      &lt;table id="t01" style="width:100%"&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Firstname&lt;/th&gt;
+          &lt;th>Lastname&lt;/th&gt;
+          &lt;th>Age&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td>James&lt;/td&gt;
+          &lt;td>Smith&lt;/td&gt;
+          &lt;td>35&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td>Martha&lt;/td&gt;
+            &lt;td>Zales&lt;/td&gt;
+            &lt;td>29&lt;/td&gt;
+          &lt;/tr&gt;
+      &lt;/table&gt;
+      <table id="t01" style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>James</td>
+          <td>Smith</td>
+          <td>35</td>
+        </tr>
+          <tr>
+          <td>Martha</td>
+          <td>Zales</td>
+          <td>29</td>
+        </tr>
+      </table>
+    </code>
+   </section>
+
+   <section id="unordered_lists" class="main-section">
+     <header>Unordered Lists</header>
+      <p>
+        In an unordered list, each list item is designated with a bullet point by default.
+        This marker can be changed with CSS <code class="code-span">list-style-type</code>
+        property and be defined as a bullet (default), disk, square, circle or none.</p>
+      <p>
+        To start an unordered list, use the <code class="code-span">&lt;ul&gt;</code> tag with each
+        <code class="code-span">&lt;li&gt;</code> nested within. Items with descriptions can also be added for more complex lists.
+      </p>
+      <p>
+        <ul><strong>Key Points to Remember</strong>
+          <li>Items added to the list will be in no particular order</li>
+        </ul>   
+        <code class="code-section">
+          &lt;ul style="list-style-type:square;"&gt;
+            &lt;li>Coffee&lt;/li&gt;
+            &lt;li>Tea&lt;/li&gt;
+            &lt;li>Milk&lt;/li&gt;
+          &lt;/ul&gt;
+          <ul style="list-style-type: square;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>
+        </code>
+      </p>  
+   </section>
+
+   <section id="ordered_lists" class="main-section">
+     <header>Ordered Lists</header>
+      <p>
+        An ordered list will automatically number each list item.
+        The numbering sequence can be changed between upper/lowercase letters or roman numerals 
+      </p>
+      <p>
+        <ul><strong>Key Points to Remember</strong>
+          <li>Can change the starting count sequence by changing the
+            <code class="code-span">&lt;start&gt;</code> attribute</li>
+          <li>Detailed lists that name on item and give a description are also supported</li>
+          <li>Nesting your code properly matters!</li>
+        </ul>
+        <code class="code-section">
+          &lt;ol type="I"&gt;
+            &lt;li>Coffee&lt;/li&gt;
+            &lt;li>Tea&lt;/li&gt;
+            &lt;li>Milk&lt;/li&gt;
+          &lt;/ol&gt;
+          <ol type="I">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol>
+        </code>
+      </p>  
+   </section>
+
+   <section id="input_forms" class="main-section">
+     <header>Input Forms</header>
+      <p>A form can be created using the form element so that users can input information and submit.
+        What happens to the input data is up to you through the <code class="code-span">action</code> attribute.</p>
+      <p>In order to create a field that will take in data, you will need to include the <code class="code-span">&lt;input&gt;</code> element
+        and set the <code class="code-span">type</code> attribute to the data type expected to be input.
+        <ul><strong>Key Points to Remember</strong>
+          <li>Many data type values that can be used. Some examples are <code class="code-span">text</code>,
+            <code class="code-span">datetime-local</code>, <code class="code-span">password</code>,
+            <code class="code-span">radio</code> and <code class="code-span">number</code></li>
+          <li>A <code class="code-span">placeholder</code> attribute can also be added to describe the input field,
+            its value takes a string</li>
+          <li>A <code class="code-span">required</code> attribute means that the user must enter data in the field in order to submit the form.</li>
+        </ul>
+      
+        <code class="code-section">
+          &lt;form action=""&gt;
+            &lt;input type="text" required placeholder="Type your name"&gt;
+            &lt;button type="submit">Submit&lt;/button&gt;
+          &lt;/form&gt;
+        <form action="">
+          <input type="text" required placeholder="Type your name">
+          <button type="submit">Submit</button>
+        </form>
+        </code>
+      </p>
+   </section>
+
+   <section id="form_datasets" class="main-section">
+     <header>Form Datasets</header>
+      <p>Datasets allow grouping of related information presented in a form.
+        This provides greater readability for those using assistive technology to access your site.
+        This is accomplished by using two tags nested in the <code class="code-span">form</code> element.
+        The <code class="code-span">fieldset</code> tags groups related elements in a form and draws a box around the items.
+        The <code class="code-span">legend</code> tag defines a caption for the <code class="code-span">fieldset</code> element.
+      </p>
+      <p>This feature is also useful in keeping related form data together when users submit
+        their information online. The data can then be placed into a database for future use.
+        <code class="code-section">
+          &lt;form action="" method="POST"&gt;
+            &lt;fieldset&gt;
+              &lt;legend&gt;&lt;span&gt;Select which food item you prefer&lt;/span&gt;&lt;/legend&gt;
+                &lt;label for="food"&gt;
+                  &lt;input id="food" type="radio" name="favfood"&gt;Pizza
+                &lt;/label&gt;
+                &lt;label for="food"&gt;
+                  &lt;input id="food" type="radio" name="favfood"&gt;Sushi
+                &lt;/label&gt;
+            &lt;/fieldset&gt;
+          &lt;/form&gt;
+          <form action="" method="POST">
+            <fieldset>
+              <legend><span>Select which food item you prefer</span></legend>
+                <label for="food">
+                  <input id="food" type="radio" name="favfood">Pizza
+                </label>
+                <label for="food">
+                  <input id="food" type="radio" name="favfood">Sushi
+                </label>
+            </fieldset>
+          </form>
+        </code>
+      </p>
+   </section>
+
+   <footer>
+    <a href="#main-doc">Return to Top</a>
+   </footer>
+
+  </main>
+</body>
+</html>
